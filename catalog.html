@@ -4,19 +4,14 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Urban Store</title>
+	<title>Matalan</title>
 	<link rel="shortcut icon" href="images/favicon.png" type="image/png">
 	<!-- Bootstrap Core CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<!-- Owl Carousel Core CSS -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<!-- Font Awesome Core CSS -->
-	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<!-- Site Icon Core CSS -->
 	<link rel="stylesheet" href="css/icofont.css">
-	<!-- Range Slider Core CSS -->
-	<link rel="stylesheet" href="css/ion.rangeSlider.css">
-    <link rel="stylesheet" href="css/ion.rangeSlider.skinFlat.css">
 	<!-- Developer Custom CSS -->
 	<link rel="stylesheet" href="css/theme.css">
 	<link rel="stylesheet" href="css/mediaqueries.css">
@@ -25,126 +20,124 @@
 
 	<!-- Start Project Code  -->
 
+	<!-- Start Mobile Side Menu -->
 	<div id="menu-sidenav" class="menu-sidenav">
-		<a class="closebtn" onclick="closemenuSidenav()">&times;</a>
 		<div class="sidenav-menu-link">
-			<h5>Shop By</h5>
 			<ul>
 				<li><a href="">home</a></li>
-				<li><a href="">shirt</a></li>
+				<li><a href="">woman</a></li>
 				<li>
 					<a data-toggle="collapse" href="#second-category">
-						t-shirt <span class="fa fa-angle-right"></span>
+						men <span class="icofont-thin-right rotate-icon"></span>
 					</a>
 					<div id="second-category" class="collapse">
 						<ul>
 							<li>
 								<a data-toggle="collapse" href="#third-category">
-									NEW T-SHIRT <span class="fa fa-angle-right"></span>
+									t-shirt <span class="icofont-thin-right rotate-icon"></span>
 								</a>
 								<div id="third-category" class="collapse">
 									<ul>
-										<li><a href="#">Normal Shirt</a></li>
-										<li><a href="#">Formal Shirt</a></li>
-										<li><a href="#">Punjabi</a></li>
+										<li><a href="#">normal shirt</a></li>
+										<li><a href="#">formal shirt</a></li>
+										<li><a href="#">polo shirt</a></li>
 									</ul>
 								</div>
 							</li>
-							<li><a href="#">GONJI STAMP</a></li>
-							<li><a href="#">IDENTITY CRISIS</a></li>
+							<li><a href="#">pant's</a></li>
+							<li><a href="#">shoe</a></li>
 						</ul>
 					</div>
 				</li>
-				<li><a href=""><i class="fa fa-shopping-bag"></i> my cart</a></li>
-				<li><a href=""><i class="fa fa-check-circle"></i> checkout</a></li>
+				<li><a href=""><i class="icofont-grocery"></i> my cart</a></li>
+				<li><a href=""><i class="icofont-check-circled"></i> checkout</a></li>
 			</ul>
 		</div>
 		<hr>
 		<div class="sidenav-menu-account">
 			<ul>
 				<li><a href="#">Terms and Condition</a></li>
-				<li><a href="#"><span class="fa fa-user-circle"></span> Reister</a></li>
-				<li><a href="#"><span class="fa fa-sign-in"></span> Login</a></li>
+				<li><a href="#"><i class="icofont-group-students"></i> Register</a></li>
+				<li><a href="#"><i class="icofont-login"></i> Login</a></li>
 			</ul>
 		</div>
 		<hr>
 		<div class="sidenav-menu-social">
 			<ul>
-				<li><a href="#"><span class="fa fa-facebook"></span></a></li>
-				<li><a href="#"><span class="fa fa-instagram"></span></a></li>
-				<li><a href="#"><span class="fa fa-youtube-play"></span></a></li>
+				<li><a href=""><i class="icofont-twitter"></i></a></li>
+				<li><a href=""><i class="icofont-facebook"></i></a></li>
+				<li><a href=""><i class="icofont-instagram"></i></a></li>
+				<li><a href=""><i class="icofont-youtube-play"></i></a></li>
 			</ul>
 		</div>
 	</div>
-		
+	<!-- End Mobile Side Menu -->
+
 	<!-- Start Header Section -->
 	<div class="header" id="header">
 		<div class="top-nav">
-			<div class="topnav-wrapper">
+			<div class="container">
 				<ul>
-					<li><a href=""><i class="icofont icofont-phone"></i> 01675963242</a></li>
-					<li><a href=""><i class="fa fa-envelope"></i> info@urban.com</a></li>
-				</ul>
-
-				<ul>
-					<li><a href=""><span>New</span> <sub>Store</sub></a></li>
-					<li><a href="">Designers & Architects</a></li>
-					<li><a href="">Bulk Orders</a></li>
-					<li><a href="">Gift Cards</a></li>
-					<li><a href="">Furniture Exchange</a></li>
+					<li><a href="">my account</a></li>
+					<li><a href="">wishlist</a></li>
+					<li><a href="">checkout</a></li>
 				</ul>
 			</div>
 		</div>
 		
 		<div class="action-bar">
-			<div class="actionbar-wrapper">
+			<div class="container">
 				<div class="row">
-					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+					<div class="col-xs-3 col-sm-4 hidden-lg hidden-md">
 						<div class="sidenav">
-							<a onclick="openmenuSidenav()">
-				    			<i class="fa fa-bars"></i>
+							<a id="mobile-menu">
+				    			<i class="icofont-navigation-menu"></i>
 				    		</a>
 						</div>
-
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-4 col-xs-5">
 						<div class="logo">
 							<a href="">
-								<img src="images/mainlogo.png" alt="Logo">
+								<img class="img-responsive" src="http://placehold.jp/20/cccccc/858585/250x35.png?text=245%20x%2035" alt="Logo">
 							</a>
 						</div>
 					</div>
 
-					<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+					<div class="col-lg-5 col-md-5 hidden-sm hidden-xs">
 						<div class="searchbox">
 							<div class="input-group">
-								<input type="text" class="form-control" placeholder="Search">
 								<div class="input-group-addon">
 									<button type="submit">
-										<i class="icofont icofont-search-alt-1"></i>
+										<i class="icofont-search-1"></i>
 									</button>
+								</div>
+								<input type="text" class="form-control" placeholder="Enter Keyword or Product Code">
+								<div class="input-group-addon">
+									<button type="submit" style="color: #fff">SEARCH</button>
 								</div>
 							</div>
 						</div>
 					</div>
 
-					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-9">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
 						<div class="action-icon">
 							<ul>
-								<li><a href=""><i class="fa fa-truck"></i></a></li>
-								<li class="dropdown">
-									<a class="dropdown-toggle" data-toggle="dropdown">
-										<i class="icofont icofont-user-alt-7"></i>
-									</a>
-									<ul class="dropdown-menu">
-										<li><a href="">Login</a></li>
-										<li><a href="">Sign Up</a></li>
-									</ul>
+								<li class="hidden-lg hidden-md">
+									<div class="cart-icon">
+										<a data-toggle="collapse" href="#msearchbox"><i class="icofont-search-1"></i></a>
+									</div>
 								</li>
 								<li>
-									<a href=""><i class="fa fa-shopping-cart"></i></a>
-									<span>1</span>
+									<div class="cart-text hidden-sm hidden-xs">
+										<a href="">VIEW YOUR BAG(1)</a>
+									</div>
+									<div class="cart-icon hidden-lg hidden-md">
+										<a href=""><img src="images/shopping-bag.png"></a>
+										<span>1</span>
+									</div>
 								</li>
-								<li>
-									<a href=""><i class="icofont icofont-search-alt-1"></i></a>
+								<li class="hidden-sm hidden-xs">
+									<a href="" class="tbtn btn-tcolor">checkout</a>
 								</li>
 							</ul>
 						</div>
@@ -153,463 +146,693 @@
 			</div>
 		</div>
 		
-		<div class="main-nav">
+		<div class="main-nav hidden-sm hidden-xs">
 			<div class="mainnav-wrapper">
 				<ul>
-					<li class="dropdown large-dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown"><span class="link-hover">sale</span></a>
-						<ul class="dropdown-menu large-dropdown-menu">
-
-							<li class="col-lg-3 col-md-3 col-sm-3">
-								<ul>
-									<li><h5 class="submenu-header">promotions</h5></li>
-									<ul class="submenu-list">
-										<li><a href="">Sofas On Discount</a></li>
-										<li><a href="">Buyback Guarantee</a></li>
-										<li><a href="">Deals of the Week</a></li>
-										<li><a href="">Clearance Sale</a></li>
-										<li><a href="">Back in Stock</a></li>
-									</ul>
-								</ul>
-							</li>
-
-							<li class="col-lg-3 col-md-3 col-sm-3">
-								<ul>
-									<li><h5 class="submenu-header">exchange</h5></li>
-									<ul class="submenu-list">
-										<li><a href="">Exchange Your Old Furniture</a></li>
-									</ul>
-								</ul>
-							</li>
-
-							<li class="col-lg-3 col-md-3 col-sm-3">
-								<ul>
-									<li><h5 class="submenu-header">promotions</h5></li>
-									<ul class="submenu-list">
-										<li><a href="">Sofas On Discount</a></li>
-										<li><a href="">Buyback Guarantee</a></li>
-										<li><a href="">Deals of the Week</a></li>
-										<li><a href="">Clearance Sale</a></li>
-										<li><a href="">Back in Stock</a></li>
-									</ul>
-								</ul>
-							</li>
-
-							<li class="col-lg-3 col-md-3 col-sm-3">
-								<ul>
-									<li><h5 class="submenu-header">exchange</h5></li>
-									<ul class="submenu-list">
-										<li><a href="">Exchange Your Old Furniture</a></li>
-									</ul>
-								</ul>
-							</li>
-
-						</ul>
+					<li class="mega-dropdown">
+						<a href="">sale</a>
+						<div class="mega-dropdown-content">
+							<div class="container">
+								<div class="row">
+									<div class="col-lg-3 col-md-3 col-sm-3">
+										<ul>
+											<li><h5 class="submenu-header">promotions</h5></li>
+											<ul class="submenu-list">
+												<li><a href="">Sofas On Discount</a></li>
+												<li><a href="">Buyback Guarantee</a></li>
+												<li><a href="">Deals of the Week</a></li>
+												<li><a href="">Clearance Sale</a></li>
+												<li><a href="">Back in Stock</a></li>
+											</ul>
+										</ul>
+									</div>
+									<div class="col-lg-3 col-md-3 col-sm-3">
+										<ul>
+											<li><h5 class="submenu-header">promotions</h5></li>
+											<ul class="submenu-list">
+												<li><a href="">Sofas On Discount</a></li>
+												<li><a href="">Buyback Guarantee</a></li>
+												<li><a href="">Deals of the Week</a></li>
+												<li><a href="">Clearance Sale</a></li>
+												<li><a href="">Back in Stock</a></li>
+											</ul>
+										</ul>
+									</div>
+									<div class="col-lg-3 col-md-3 col-sm-3">
+										<ul>
+											<li><h5 class="submenu-header">promotions</h5></li>
+											<ul class="submenu-list">
+												<li><a href="">Sofas On Discount</a></li>
+												<li><a href="">Buyback Guarantee</a></li>
+												<li><a href="">Deals of the Week</a></li>
+												<li><a href="">Clearance Sale</a></li>
+												<li><a href="">Back in Stock</a></li>
+											</ul>
+										</ul>
+									</div>
+									<div class="col-lg-3 col-md-3 col-sm-3">
+										<ul>
+											<li><h5 class="submenu-header">promotions</h5></li>
+											<ul class="submenu-list">
+												<li><a href="">Sofas On Discount</a></li>
+												<li><a href="">Buyback Guarantee</a></li>
+												<li><a href="">Deals of the Week</a></li>
+												<li><a href="">Clearance Sale</a></li>
+												<li><a href="">Back in Stock</a></li>
+											</ul>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
 					</li>
-					<li><a href=""><span class="link-hover">living</span></a></li>
-					<li><a href=""><span class="link-hover">bedroom</span></a></li>
-					<li><a href=""><span class="link-hover">dining</span></a></li>
-					<li><a href=""><span class="link-hover">storage</span></a></li>
-					<li><a href=""><span class="link-hover">study</span></a></li>
-					<li><a href=""><span class="link-hover">mattresses</span></a></li>
-					<li><a href=""><span class="link-hover">interiors</span></a></li>
-					<li><a href=""><span class="link-hover">decor</span></a></li>
-					<li><a href=""><span class="link-hover">collections</span></a></li>
-					<li><a href=""><span class="link-hover">new</span></a></li>
+					<li>
+						<a href="">living</a>
+					</li>
+					<li>
+						<a href="">bedroom</a>
+					</li>
+					<li>
+						<a href="">dining</a>
+					</li>
+					<li>
+						<a href="">storage</a>
+					</li>
+					<li>
+						<a href="">study</a>
+					</li>
+					<li>
+						<a href="">mattresses</a>
+					</li>
+					<li>
+						<a href="">interiors</a>
+					</li>
+					<li>
+						<a href="">decor</a>
+					</li>
+					<li>
+						<a href="">new</a>
+					</li>
 				</ul>
 			</div>
 		</div>
 	</div>
 	<!-- End Header Section -->
 
-	<div class="searchbox-mobile">
-		<div class="input-group">
-			<input type="text" class="form-control" placeholder="Search">
-			<div class="input-group-addon">
-				<button type="submit">
-					<i class="icofont icofont-search-alt-1"></i>
-				</button>
-			</div>
-		</div>
-	</div>
-
 	<div class="back-link">
-		<div class="section-content">
+		<div class="container">
 			<ul class="breadcrumb">
-				<li><a href="#">home</a></li>
-				<li><a href="#">living</a></li>
-				<li><a href="#">table</a></li>
-				<li class="active">Coffee Tables</li> 
+				<li><a href="/">matalan</a></li>
+				<li class="active">mens</li> 
 			</ul>
 		</div>
 	</div>
 
-	<!-- Start Blog Section -->
-	<section class="catalog">
-		<div class="section-header">
-			<h2>Coffee Tables</h2>
-			<h6>(100 Products)</h6>
-			<p>Our elegant coffee tables are available in various styles, sizes, shapes and colours. From glass top coffee tables to storage coffee tables and coffee tables with seating, we have it all. We also have a range of small coffee tables, side & console tables to complete your living room set.</p>
-		</div>
-		<div class="section-content">
-			<div class="filter-sort">
-				<div class="row">
-					<div class="col-lg-6 col-md-6 com-sm-6 col-xs-12">
+	<!-- Start Collection Section -->
+	<section class="collection">
+		<div class="container">
+			<h4 class="text-center visible-xs">men</h4>
+			<div class="row">
+				<div class="col-lg-3 col-md-3 col-sm-4">
+					<div class="collection-count">
+						<h4>(100 products)</h4>
+						<p>filter your results</p>
+					</div>
+					<div class="filters">
 						<div class="filter-option">
-							<p>FILTERS</p>
-							<ul>
-								<li class="dropdown">
-									<a class="btn btn-filter dropdown-toggle" data-toggle="dropdown">Price
-							        <span class="caret"></span></a>
-							        <ul class="dropdown-menu">
-							          <li><a href="#">Page 1-1</a></li>
-							          <li><a href="#">Page 1-2</a></li>
-							          <li><a href="#">Page 1-3</a></li>
-							        </ul>
-								</li>
-								<li class="dropdown">
-									<a class="btn btn-filter dropdown-toggle" data-toggle="dropdown">Seating Capacity
-							        <span class="caret"></span></a>
-							        <ul class="dropdown-menu">
-							          <li><a href="#">Page 1-1</a></li>
-							          <li><a href="#">Page 1-2</a></li>
-							          <li><a href="#">Page 1-3</a></li>
-							        </ul>
-								</li>
-								<li class="dropdown">
-									<a class="btn btn-filter dropdown-toggle" data-toggle="dropdown">Size/Shape
-							        <span class="caret"></span></a>
-							        <ul class="dropdown-menu">
-							          <li><a href="#">Page 1-1</a></li>
-							          <li><a href="#">Page 1-2</a></li>
-							          <li><a href="#">Page 1-3</a></li>
-							        </ul>
-								</li>
-								<li class="dropdown">
-									<a class="btn btn-filter dropdown-toggle" data-toggle="dropdown">Material/Finish
-							        <span class="caret"></span></a>
-							        <ul class="dropdown-menu">
-							          <li><a href="#">Page 1-1</a></li>
-							          <li><a href="#">Page 1-2</a></li>
-							          <li><a href="#">Page 1-3</a></li>
-							        </ul>
-								</li>
-							</ul>
+							<div class="panel-group">
+							  	<div class="panel panel-default">
+								    <div class="panel-heading">
+								      	<h5 class="panel-title">
+								        	<a data-toggle="collapse" href="#filter1">
+								        		<span>waist size</span><span class="pull-right"><i class="icofont-minus fo-icon-change"></i></span>
+								        	</a>
+								      	</h5>
+								    </div>
+								    <div id="filter1" class="panel-collapse collapse in filter-collapse">
+								      	<div class="panel-body">
+									        <label class="option">
+									          	<span>slim fit</span>
+									          	<input type="checkbox">
+									          	<span class="checkmark"></span>
+									        </label>
+									        <label class="option">
+									          	<span>30</span>
+									          	<input type="checkbox">
+									          	<span class="checkmark"></span>
+									        </label>
+									        <label class="option">
+									          	<span>32</span>
+									          	<input type="checkbox">
+									          	<span class="checkmark"></span>
+									        </label>
+									        <label class="option">
+									          	<span>34</span>
+									          	<input type="checkbox">
+									          	<span class="checkmark"></span>
+									        </label>
+								      	</div>
+								    </div>
+							  	</div>
+							</div>
 						</div>
-					</div>
-					<div class="col-lg-6 col-md-6 com-sm-6 col-xs-12">
-						<div class="sort-option">
-							<p>SORT BY</p>
-							<ul>
-								<li class="dropdown">
-									<a class="btn btn-filter dropdown-toggle" data-toggle="dropdown">Default Sort
-							        <span class="caret"></span></a>
-							        <ul class="dropdown-menu">
-							          <li><a href="#">Page 1-1</a></li>
-							          <li><a href="#">Page 1-2</a></li>
-							          <li><a href="#">Page 1-3</a></li>
-							        </ul>
-								</li>
-							</ul>
+						<!-- Filter Option 2 -->
+						<div class="filter-option">
+							<div class="panel-group">
+							  	<div class="panel panel-default">
+								    <div class="panel-heading">
+								      	<h5 class="panel-title">
+								        	<a data-toggle="collapse" href="#filter2">
+								        		<span>waist size</span><span class="pull-right"><i class="icofont-minus fo-icon-change"></i></span>
+								        	</a>
+								      	</h5>
+								    </div>
+								    <div id="filter2" class="panel-collapse collapse in filter-collapse">
+								      	<div class="panel-body">
+									        <label class="option">
+									          	<span>slim fit</span>
+									          	<input type="checkbox">
+									          	<span class="checkmark"></span>
+									        </label>
+									        <label class="option">
+									          	<span>30</span>
+									          	<input type="checkbox">
+									          	<span class="checkmark"></span>
+									        </label>
+									        <label class="option">
+									          	<span>32</span>
+									          	<input type="checkbox">
+									          	<span class="checkmark"></span>
+									        </label>
+									        <label class="option">
+									          	<span>34</span>
+									          	<input type="checkbox">
+									          	<span class="checkmark"></span>
+									        </label>
+								      	</div>
+								    </div>
+							  	</div>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="catalog-product">
-				<div class="row">
-
-					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-						<div class="product-box">
-							<div class="photo">
-								<a href="">
-									<img src="https://ul-a.akamaihd.net/opt/ul-a.akamaihd.net/images/products/184957/product/Taarkashi_Coffee_Table_LP.jpg?1524546718" alt="Image Size 293x293">
-								</a>
-								<!-- <span>SALE</span> -->
-								<span>NEW</span>
+				<div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+					<h3 class="collection-name text-center">men</h3>
+					<div class="sort-option">
+						<div class="row">
+							<div class="col-sm-6 hidden-xs">
+								<ul class="nav nav-pills">
+								    <li>
+								    	<a data-toggle="pill" href="#grid4x4">
+								    		<img class="img-responsive img-4x4" src="images/grid4x4.png">
+								    	</a>
+								    </li>
+								    <li>
+								    	<a data-toggle="pill" href="#grid3x3">
+								    		<img class="img-responsive img-3x3" src="images/grid3x3.png">
+								    	</a>
+									</li>
+							  	</ul>
 							</div>
-							<div class="name">
-								<a href="">new coffee table</a>
+							<div class="col-sm-6 col-xs-6">
+								<select class="form-control">
+								    <option>Stort By</option>
+								    <option>New on Store</option>
+								    <option>High to low</option>
+								    <option>Low to high</option>
+							  	</select>
 							</div>
-							<div class="price">
-								<span>Tk.1000</span>
-							</div>
-							<div class="button">
-								<a class="btn-theme href="">view product</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-						<div class="product-box">
-							<div class="photo">
-								<a href="">
-									<img src="https://ul-a.akamaihd.net/opt/ul-a.akamaihd.net/images/products/184957/product/Taarkashi_Coffee_Table_LP.jpg?1524546718" alt="Image Size 293x293">
-								</a>
-								<!-- <span>SALE</span> -->
-								<span>NEW</span>
-							</div>
-							<div class="name">
-								<a href="">new coffee table</a>
-							</div>
-							<div class="price">
-								<span>Tk.1000</span>
-							</div>
-							<div class="button">
-								<a class="btn-theme href="">view product</a>
+							<div class="col-sm-6 col-xs-6 visible-xs">
+								<div class="mobile-filter">
+									Filter By 
+									<span class="pull-right"><i class="icofont-thin-down"></i></span>
+								</div>
 							</div>
 						</div>
 					</div>
-
-					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-						<div class="product-box">
-							<div class="photo">
-								<a href="">
-									<img src="https://ul-a.akamaihd.net/opt/ul-a.akamaihd.net/images/products/184957/product/Taarkashi_Coffee_Table_LP.jpg?1524546718" alt="Image Size 293x293">
-								</a>
-								<!-- <span>SALE</span> -->
-								<span>NEW</span>
+					<div class="tab-content collection-products">
+						<div id="grid4x4" class="tab-pane fade in active">
+							<div class="row">
+								<div class="col-sm-3 col-xs-6">
+									<div class="product-box">
+										<div class="photo">
+											<a class="featured-img" href="">
+												<img class="img-responsive front-img" src="https://placehold.jp/80/cccccc/858585/640x896.png?text=Image%201">
+												<img class="img-responsive back-img" src="https://placehold.jp/80/cccccc/858585/640x896.png?text=Image%202">
+											</a>
+										</div>
+										<div class="text">
+											<div class="name">
+												<a href="">product name will be very long</a>
+											</div>
+											<div class="price"><span>400.00</span></div>
+											<div class="link"><a href="">view</a></div>
+											<div class="rating">
+												<span>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3 col-xs-6">
+									<div class="product-box">
+										<div class="photo">
+											<a class="featured-img" href="">
+												<img class="img-responsive front-img" src="https://placehold.jp/80/cccccc/858585/640x896.png?text=Image%201">
+												<img class="img-responsive back-img" src="https://placehold.jp/80/cccccc/858585/640x896.png?text=Image%202">
+											</a>
+										</div>
+										<div class="text">
+											<div class="name">
+												<a href="">product name will be very long</a>
+											</div>
+											<div class="price"><span>400.00</span></div>
+											<div class="link"><a href="">view</a></div>
+											<div class="rating">
+												<span>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3 col-xs-6">
+									<div class="product-box">
+										<div class="photo">
+											<a class="featured-img" href="">
+												<img class="img-responsive front-img" src="https://placehold.jp/80/cccccc/858585/640x896.png?text=Image%201">
+												<img class="img-responsive back-img" src="https://placehold.jp/80/cccccc/858585/640x896.png?text=Image%202">
+											</a>
+										</div>
+										<div class="text">
+											<div class="name">
+												<a href="">product name will be very long</a>
+											</div>
+											<div class="price"><span>400.00</span></div>
+											<div class="link"><a href="">view</a></div>
+											<div class="rating">
+												<span>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3 col-xs-6">
+									<div class="product-box">
+										<div class="photo">
+											<a class="featured-img" href="">
+												<img class="img-responsive front-img" src="https://placehold.jp/80/cccccc/858585/640x896.png?text=Image%201">
+												<img class="img-responsive back-img" src="https://placehold.jp/80/cccccc/858585/640x896.png?text=Image%202">
+											</a>
+										</div>
+										<div class="text">
+											<div class="name">
+												<a href="">product name will be very long</a>
+											</div>
+											<div class="price"><span>400.00</span></div>
+											<div class="link"><a href="">view</a></div>
+											<div class="rating">
+												<span>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
-							<div class="name">
-								<a href="">new coffee table</a>
+							<!-- Start 2nd Row -->
+							<div class="row">
+								<div class="col-sm-3 col-xs-6">
+									<div class="product-box">
+										<div class="photo">
+											<a class="featured-img" href="">
+												<img class="img-responsive front-img" src="https://placehold.jp/80/cccccc/858585/640x896.png?text=Image%201">
+												<img class="img-responsive back-img" src="https://placehold.jp/80/cccccc/858585/640x896.png?text=Image%202">
+											</a>
+										</div>
+										<div class="text">
+											<div class="name">
+												<a href="">product name will be very long</a>
+											</div>
+											<div class="price"><span>400.00</span></div>
+											<div class="link"><a href="">view</a></div>
+											<div class="rating">
+												<span>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3 col-xs-6">
+									<div class="product-box">
+										<div class="photo">
+											<a class="featured-img" href="">
+												<img class="img-responsive front-img" src="https://placehold.jp/80/cccccc/858585/640x896.png?text=Image%201">
+												<img class="img-responsive back-img" src="https://placehold.jp/80/cccccc/858585/640x896.png?text=Image%202">
+											</a>
+										</div>
+										<div class="text">
+											<div class="name">
+												<a href="">product name will be very long</a>
+											</div>
+											<div class="price"><span>400.00</span></div>
+											<div class="link"><a href="">view</a></div>
+											<div class="rating">
+												<span>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3 col-xs-6">
+									<div class="product-box">
+										<div class="photo">
+											<a class="featured-img" href="">
+												<img class="img-responsive front-img" src="https://placehold.jp/80/cccccc/858585/640x896.png?text=Image%201">
+												<img class="img-responsive back-img" src="https://placehold.jp/80/cccccc/858585/640x896.png?text=Image%202">
+											</a>
+										</div>
+										<div class="text">
+											<div class="name">
+												<a href="">product name will be very long</a>
+											</div>
+											<div class="price"><span>400.00</span></div>
+											<div class="link"><a href="">view</a></div>
+											<div class="rating">
+												<span>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3 col-xs-6">
+									<div class="product-box">
+										<div class="photo">
+											<a class="featured-img" href="">
+												<img class="img-responsive front-img" src="https://placehold.jp/80/cccccc/858585/640x896.png?text=Image%201">
+												<img class="img-responsive back-img" src="https://placehold.jp/80/cccccc/858585/640x896.png?text=Image%202">
+											</a>
+										</div>
+										<div class="text">
+											<div class="name">
+												<a href="">product name will be very long</a>
+											</div>
+											<div class="price"><span>400.00</span></div>
+											<div class="link"><a href="">view</a></div>
+											<div class="rating">
+												<span>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
-							<div class="price">
-								<span>Tk.1000</span>
+					    </div>
+					    <div id="grid3x3" class="tab-pane fade in">
+							<div class="row">
+								<div class="col-sm-4 col-xs-6">
+									<div class="product-box">
+										<div class="photo">
+											<a class="featured-img" href="">
+												<img class="img-responsive front-img" src="https://placehold.jp/80/cccccc/858585/640x896.png?text=Image%201">
+												<img class="img-responsive back-img" src="https://placehold.jp/80/cccccc/858585/640x896.png?text=Image%202">
+											</a>
+										</div>
+										<div class="text">
+											<div class="name">
+												<a href="">product name will be very long</a>
+											</div>
+											<div class="price"><span>400.00</span></div>
+											<div class="link"><a href="">view</a></div>
+											<div class="rating">
+												<span>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-4 col-xs-6">
+									<div class="product-box">
+										<div class="photo">
+											<a class="featured-img" href="">
+												<img class="img-responsive front-img" src="https://placehold.jp/80/cccccc/858585/640x896.png?text=Image%201">
+												<img class="img-responsive back-img" src="https://placehold.jp/80/cccccc/858585/640x896.png?text=Image%202">
+											</a>
+										</div>
+										<div class="text">
+											<div class="name">
+												<a href="">product name will be very long</a>
+											</div>
+											<div class="price"><span>400.00</span></div>
+											<div class="link"><a href="">view</a></div>
+											<div class="rating">
+												<span>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-4 col-xs-6">
+									<div class="product-box">
+										<div class="photo">
+											<a class="featured-img" href="">
+												<img class="img-responsive front-img" src="https://placehold.jp/80/cccccc/858585/640x896.png?text=Image%201">
+												<img class="img-responsive back-img" src="https://placehold.jp/80/cccccc/858585/640x896.png?text=Image%202">
+											</a>
+										</div>
+										<div class="text">
+											<div class="name">
+												<a href="">product name will be very long</a>
+											</div>
+											<div class="price"><span>400.00</span></div>
+											<div class="link"><a href="">view</a></div>
+											<div class="rating">
+												<span>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
-							<div class="button">
-								<a class="btn-theme href="">view product</a>
+							<!-- Start 2nd Row -->
+							<div class="row">
+								<div class="col-sm-4 col-xs-6">
+									<div class="product-box">
+										<div class="photo">
+											<a class="featured-img" href="">
+												<img class="img-responsive front-img" src="https://placehold.jp/80/cccccc/858585/640x896.png?text=Image%201">
+												<img class="img-responsive back-img" src="https://placehold.jp/80/cccccc/858585/640x896.png?text=Image%202">
+											</a>
+										</div>
+										<div class="text">
+											<div class="name">
+												<a href="">product name will be very long</a>
+											</div>
+											<div class="price"><span>400.00</span></div>
+											<div class="link"><a href="">view</a></div>
+											<div class="rating">
+												<span>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-4 col-xs-6">
+									<div class="product-box">
+										<div class="photo">
+											<a class="featured-img" href="">
+												<img class="img-responsive front-img" src="https://placehold.jp/80/cccccc/858585/640x896.png?text=Image%201">
+												<img class="img-responsive back-img" src="https://placehold.jp/80/cccccc/858585/640x896.png?text=Image%202">
+											</a>
+										</div>
+										<div class="text">
+											<div class="name">
+												<a href="">product name will be very long</a>
+											</div>
+											<div class="price"><span>400.00</span></div>
+											<div class="link"><a href="">view</a></div>
+											<div class="rating">
+												<span>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-4 col-xs-6">
+									<div class="product-box">
+										<div class="photo">
+											<a class="featured-img" href="">
+												<img class="img-responsive front-img" src="https://placehold.jp/80/cccccc/858585/640x896.png?text=Image%201">
+												<img class="img-responsive back-img" src="https://placehold.jp/80/cccccc/858585/640x896.png?text=Image%202">
+											</a>
+										</div>
+										<div class="text">
+											<div class="name">
+												<a href="">product name will be very long</a>
+											</div>
+											<div class="price"><span>400.00</span></div>
+											<div class="link"><a href="">view</a></div>
+											<div class="rating">
+												<span>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+													<i class="icofont-star"></i>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
-						</div>
+					    </div>
 					</div>
-
-				</div>
-
-				<!-- Second Row -->
-				<div class="row">
-
-					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-						<div class="product-box">
-							<div class="photo">
-								<a href="">
-									<img src="https://ul-a.akamaihd.net/opt/ul-a.akamaihd.net/images/products/184957/product/Taarkashi_Coffee_Table_LP.jpg?1524546718" alt="Image Size 293x293">
-								</a>
-								<!-- <span>SALE</span> -->
-								<span>NEW</span>
-							</div>
-							<div class="name">
-								<a href="">new coffee table</a>
-							</div>
-							<div class="price">
-								<span>Tk.1000</span>
-							</div>
-							<div class="button">
-								<a class="btn-theme href="">view product</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-						<div class="product-box">
-							<div class="photo">
-								<a href="">
-									<img src="https://ul-a.akamaihd.net/opt/ul-a.akamaihd.net/images/products/184957/product/Taarkashi_Coffee_Table_LP.jpg?1524546718" alt="Image Size 293x293">
-								</a>
-								<!-- <span>SALE</span> -->
-								<span>NEW</span>
-							</div>
-							<div class="name">
-								<a href="">new coffee table</a>
-							</div>
-							<div class="price">
-								<span>Tk.1000</span>
-							</div>
-							<div class="button">
-								<a class="btn-theme href="">view product</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-						<div class="product-box">
-							<div class="photo">
-								<a href="">
-									<img src="https://ul-a.akamaihd.net/opt/ul-a.akamaihd.net/images/products/184957/product/Taarkashi_Coffee_Table_LP.jpg?1524546718" alt="Image Size 293x293">
-								</a>
-								<!-- <span>SALE</span> -->
-								<span>NEW</span>
-							</div>
-							<div class="name">
-								<a href="">new coffee table</a>
-							</div>
-							<div class="price">
-								<span>Tk.1000</span>
-							</div>
-							<div class="button">
-								<a class="btn-theme href="">view product</a>
-							</div>
-						</div>
-					</div>
-
 				</div>
 			</div>
 		</div>
 	</section>
-	<!-- Start Blog Section -->
+	<!-- Start Collection Section -->
 	
-	<!-- Start Newsletter Section -->
-	<section class="newsletter section-padding">
-		<div class="section-header">
-			<h3>SIGN UP AND GET A CHANCE TO WIN THE GIVEAWAY OF THE WEEK.</h3>
-		</div>
-
-		<div class="section-content">
-			<form class="form-inline" action="/action_page.php">
-				<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
-					<input type="email" class="form-control" id="email" placeholder="Your Email ID">
-				</div>
-
-				<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
-					<button type="submit" class="btn-theme">SUBSCRIBE</button>
-				</div>			  
-			</form>
-		</div>
-	</section>
-	<!-- End Newsletter Section -->
-
-
-	<!-- Start Long Footer Section -->
-	<section class="long-footer">
-		<div class="section-content">
+	<!-- Start Footer Section -->
+	<footer>
+		<div class="container">
 			<div class="row">
-				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-					<h5>my account</h5>
-					<div class="footer-style"></div>
-					<div class="row">
-						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-							<ul>
-								<li><a href="">link here</a></li>
-								<li><a href="">link here</a></li>
-								<li><a href="">link here</a></li>
-								<li><a href="">link here</a></li>
-								<li><a href="">link here</a></li>
-							</ul>
-						</div>
-						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-							<ul>
-								<li><a href="">link here</a></li>
-								<li><a href="">link here</a></li>
-								<li><a href="">link here</a></li>
-								<li><a href="">link here</a></li>
-								<li><a href="">link here</a></li>
-							</ul>
-						</div>
+				<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+					<div class="newsletter">
+						<h5>Sign up for the latest offers and promotions</h5>
+						<div class="input-group">
+							<div class="input-group-btn">
+						      <button class="btn btn-default nl-btn-left">
+						        <i class="icofont-envelope"></i>
+						      </button>
+						    </div>
+						    <input type="text" class="form-control" placeholder="Please Enter an email">
+						    <div class="input-group-btn">
+						      <button class="btn btn-default nl-btn-right" type="submit">
+						        SIGN UP
+						      </button>
+						    </div>
+						  </div>
 					</div>
-				</div>
-				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-					<h5>information</h5>
-					<div class="footer-style"></div>
-					<div class="row">
-						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-							<ul>
-								<li><a href="">link here</a></li>
-								<li><a href="">link here</a></li>
-								<li><a href="">link here</a></li>
-								<li><a href="">link here</a></li>
-								<li><a href="">link here</a></li>
-							</ul>
-						</div>
-						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-							<ul>
-								<li><a href="">link here</a></li>
-								<li><a href="">link here</a></li>
-								<li><a href="">link here</a></li>
-								<li><a href="">link here</a></li>
-								<li><a href="">link here</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-					<h5>explore more</h5>
-					<div class="footer-style"></div>
-					<ul>
-						<li><a href="">link here</a></li>
-						<li><a href="">link here</a></li>
-						<li><a href="">link here</a></li>
-					</ul>
-				</div>
-				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-					<h5>Registered Address</h5>
-					<div class="footer-style"></div>
-					<a href="">Cilory.com</a>
-					<p>
-						Dew Solutions Pvt Ltd <br>
-						1017, JMD Megapolis, 10th Floor <br>
-						Sohna Road, Sector 48 <br>
-						Gurgaon -122018 <br>
-						India.<br>
-						Tel: 0124 4745 777<br>
-						(9 am - 8 pm Mon-Sat)<br>
-						cs@cilory.com
-					</p>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-					<h5>connect with us</h5>
-					<div class="footer-style"></div>
-
-					<div class="social">
+					<div class="social-media-icon">
 						<ul>
-							<li>
-							
-								<a href="#" class="face"><i class="fa fa-facebook"></i></a>
-							
-								<a href="#" class="twit"><i class="fa fa-twitter"></i></a>
-							
-								<a href="#" class="tube"><i class="fa fa-youtube-play"></i></a>
-							
-								<a href="#" class="drib"><i class="fa fa-dribbble"></i></a>
-								
-							</li>
+							<li><a href=""><i class="icofont-twitter"></i></a></li>
+							<li><a href=""><i class="icofont-facebook"></i></a></li>
+							<li><a href=""><i class="icofont-instagram"></i></a></li>
+							<li><a href=""><i class="icofont-pinterest"></i></a></li>
+							<li><a href=""><i class="icofont-youtube-play"></i></a></li>
 						</ul>
 					</div>
 				</div>
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-					<h5>download app</h5>
-					<div class="footer-style"></div>
-					<div class="download-app">
-						<a href="">
-							<img src="https://ul-a.akamaihd.net/media/badges/app_store/app_store_badge.svg" alt="">
-						</a>
-						<a href="">
-							<img src="https://ul-a.akamaihd.net/media/badges/play_store/google-play-badge.png" style="width: 137px;" alt="">
-						</a>
+				<div class="col-lg-offset-1 col-md-offset-1 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<div class="row">
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+							<h5>customer services</h5>
+							<div class="footer-link">
+								<ul>
+									<li><a href="">order</a></li>
+									<li><a href="">delivery</a></li>
+									<li><a href="">return</a></li>
+									<li><a href="">faq</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+							<h5>about matalan</h5>
+							<div class="footer-link">
+								<ul>
+									<li><a href="">about</a></li>
+									<li><a href="">history</a></li>
+									<li><a href="">project</a></li>
+									<li><a href="">job</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+							<h5>customer services</h5>
+							<div class="footer-link">
+								<ul>
+									<li><a href="">order</a></li>
+									<li><a href="">delivery</a></li>
+									<li><a href="">return</a></li>
+									<li><a href="">faq</a></li>
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
-	<!-- End Long Footer Section -->
-
-	<!-- Start Footer Section -->
-	<footer>
-		<div class="section-content">
-			<div class="delivery-place">
-				<h5>delivery place</h5>
-				<a href="">link name</a><a href="">link name</a><a href="">link name</a><a href="">link name</a>
-				<a href="">link name</a><a href="">link name</a><a href="">link name</a><a href="">link name</a>
-				<a href="">link name</a><a href="">link name</a><a href="">link name</a><a href="">link name</a>
-				<a href="">link name</a><a href="">link name</a><a href="">link name</a><a href="">link name</a>
-				<a href="">link name</a><a href="">link name</a><a href="">link name</a><a href="">link name</a>
-				<a href="">link name</a><a href="">link name</a><a href="">link name</a><a href="">link name</a>
-				<a href="">link name</a><a href="">link name</a><a href="">link name</a><a href="">link name</a>
-				<a href="">link name</a><a href="">link name</a>
+			<div class="row">
+				<div class="col-lg-5 col-md-5 col-sm-5 col-xs-6">
+					&copy; Copyright 2019-Matalan
+				</div>
+				<div class="col-lg-7 col-md-7 col-sm-7 col-xs-6">
+					<img class="img-responsive" src="images/ssl-long.png" alt="payment">
+				</div>
 			</div>
-			<p>
-				&copy; 2018 Cilory | Powered by
-				<a href="https://www.storrea.com/" target="_blank">Storrea</a>
-			</p>
 		</div>
 	</footer>
 	<!-- End Footer Section -->
@@ -622,10 +845,8 @@
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<!-- Bootstrap Core JS -->
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<!-- Owl Carousel Core JS -->
-	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
-	<!-- Range Slider Core JS -->
-	<script type="text/javascript" src="js/ion.rangeSlider.js"></script>
+	<!-- Owl-Carousel Core JS -->
+	<script type="text/javascript" src="js/owl.carousel.js"></script>
 	<!-- ElevateZoom Core JS -->
 	<script type="text/javascript" src="js/elevateZoom.min.js"></script>
 	<!-- Developer Custom JS -->

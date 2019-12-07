@@ -17,26 +17,48 @@ $(document).ready(function() {
   //   }
   // });
 
-  $('.sidenav').click(function() {
-    /* Act on the event */
-    $('#menu-sidenav').toggleClass('show-sidemenu');
-  });
+    $('.sidenav').click(function() {
+        /* Act on the event */
+        $('#menu-sidenav').toggleClass('show-sidemenu');
+    });
 
-  /*
-    * ----------------------------------------------
-    *----------Accordion with Toggle Icon-----------
-    * ----------------------------------------------
-  */
+    /*
+        * ----------------------------------------------
+        *----------Accordion with Toggle Icon-----------
+        * ----------------------------------------------
+    */
 
-  function toggleIcon(e){
-    $(e.target)
-      .prev('li a')
-      .find(".rotate-icon")
-      .toggleClass('icofont-thin-right icofont-thin-down');
-  }
+    function toggleIcon(e){
+        $(e.target)
+            .prev('li a')
+            .find(".rotate-icon")
+            .toggleClass('icofont-thin-right icofont-thin-down');
+    }
 
-  $('.sidenav-menu-link').on('hidden.bs.collapse', toggleIcon);
-  $('.sidenav-menu-link').on('shown.bs.collapse', toggleIcon);
+    $('.sidenav-menu-link').on('hidden.bs.collapse', toggleIcon);
+    $('.sidenav-menu-link').on('shown.bs.collapse', toggleIcon);
+
+    /*
+        * ----------------------------------------------
+        *----------Filter Toggle Icon-----------
+        * ----------------------------------------------
+    */
+
+    function filtertoggleIcon(e){
+        $(e.target)
+            .prev('h5 a')
+            .find(".fo-icon-change")
+            .toggleClass('icofont-minus icofont-plus');
+    }
+
+    $('.filter-option').on('hidden.bs.collapse', filtertoggleIcon);
+    $('.filter-option').on('shown.bs.collapse', filtertoggleIcon);
+
+    /*
+        * ----------------------------------------------
+        *--------------Home Product Slider--------------
+        * ----------------------------------------------
+    */
 
     $('.hp-slider').owlCarousel({
         loop:true,
@@ -59,19 +81,19 @@ $(document).ready(function() {
         }
     });
 
-  /*
-   * -----------------------------------------------------------------
-   *---------------------------ElevateZoom----------------------------
-   * -----------------------------------------------------------------
-   */
+    /*
+    * -----------------------------------------------------------------
+    *---------------------------ElevateZoom----------------------------
+    * -----------------------------------------------------------------
+    */
 
 
-  $(".pdd-img").elevateZoom({
-    gallery:'controls',
-    galleryActiveClass: 'active',
-    responsive:true,
-    lensSize:50
-  });  
+    $(".pdd-img").elevateZoom({
+        gallery:'controls',
+        galleryActiveClass: 'active',
+        responsive:true,
+        lensSize:50
+    });  
 
 });
 
@@ -79,3 +101,13 @@ $(document).ready(function() {
 
 
   
+$(".filter-collapse").on("hide.bs.collapse", function(){
+    $(this).find(".fo-icon-change")
+        .removeClass('icofont-minus')
+        .addClass('icofont-plus');
+});
+$(".filter-collapse").on("show.bs.collapse", function(){
+    $(this).find(".fo-icon-change")
+        .removeClass('icofont-plus')
+        .addClass('icofont-minus');
+});
