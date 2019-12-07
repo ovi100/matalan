@@ -523,6 +523,8 @@ CSS For Index Page
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   padding: 10px 0; }
+  .collection .sort-option .nav-pills li > a {
+    padding: 0 15px; }
   .collection .sort-option .nav-pills .img-4x4 {
     max-height: 30px; }
   .collection .sort-option .nav-pills .img-3x3 {
