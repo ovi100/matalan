@@ -586,7 +586,7 @@ CSS For Index Page
 				position: absolute;
 			    top: 30%;
 			    left: -25px;
-			    color: #000;
+			    color: $bcolor;
 			    font-size: 25px;
 			    &:focus{outline: 0;}
 			}
@@ -594,7 +594,7 @@ CSS For Index Page
 				position: absolute;
 			    top: 30%;
 			    right: -25px;
-			    color: #000;
+			    color: $bcolor;
 			    font-size: 25px;
 			    &:focus{outline: 0;}
 			}
@@ -688,7 +688,18 @@ CSS For Index Page
 	    padding: 10px 0;
 
 	    .nav-pills{
-	    	li>a{padding: 0 15px;}
+	    	li{
+	    		a{
+	    			padding: 0 15px;
+	    			&:hover,&:focus{background: $wcolor;}
+	    		}
+	    	}
+	    	.acive{
+    			a{
+    				background: #fff;
+    				&:hover,&:focus{background: $wcolor;}
+    			}
+    		}
 	    	.img-4x4{
 	    		max-height: 30px;
 	    	}
@@ -738,7 +749,79 @@ CSS For Index Page
 			.text{
 				padding: 15px;
 				text-align: center;
+				.name{
+					margin-bottom: 10px;
+					a{
+						color: #000;
+						text-transform: capitalize;
+					}
+				}
+				.price{
+					margin-bottom: 10px;
+					span{
+						font-size: 15px;
+					    font-weight: 700;
+					}
+				}
+				.link{
+					margin-bottom: 10px;
+					a{
+						background: $wcolor;
+					    border: 1px solid #ddd;
+					    color: $bcolor;
+					    font-size: 12px;
+					    padding: 5px 7px;
+					    text-transform: uppercase;
+					}
+				}
 			}
+		}
+	}
+}
+// *********************************
+
+// CSS For Product Details Page
+.product-details{
+	.pd-slider{
+		.owl-nav{
+			.owl-prev{
+				position: absolute;
+			    top: 45%;
+			    left: 10px;
+			    background: $wcolor;
+			    color: $bcolor;
+			    font-size: 25px;
+			    &:focus{outline: 0;}
+			}
+			.owl-next{
+				position: absolute;
+			    top: 45%;
+			    right: 10px;
+			    background: $wcolor;
+			    color: $bcolor;
+			    font-size: 25px;
+			    &:focus{outline: 0;}
+			}
+			i{padding: 0 10px;}
+		}
+	}
+	.name-price{
+		.name{
+			font-size: 25px;
+		    font-weight: 500;
+		    text-transform: capitalize;
+		}
+	}
+	.variants{
+		.cbg{
+			display: inline-block;
+		    width: 20px;
+		    height: 20px;
+		    background: #000;
+		    border-radius: 50%;
+		    position: relative;
+		    top: 5px;
+		    left: 5px;
 		}
 	}
 }

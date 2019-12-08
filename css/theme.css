@@ -523,8 +523,14 @@ CSS For Index Page
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   padding: 10px 0; }
-  .collection .sort-option .nav-pills li > a {
+  .collection .sort-option .nav-pills li a {
     padding: 0 15px; }
+    .collection .sort-option .nav-pills li a:hover, .collection .sort-option .nav-pills li a:focus {
+      background: #fff; }
+  .collection .sort-option .nav-pills .acive a {
+    background: #fff; }
+    .collection .sort-option .nav-pills .acive a:hover, .collection .sort-option .nav-pills .acive a:focus {
+      background: #fff; }
   .collection .sort-option .nav-pills .img-4x4 {
     max-height: 30px; }
   .collection .sort-option .nav-pills .img-3x3 {
@@ -564,5 +570,58 @@ CSS For Index Page
   .collection .collection-products .product-box .text {
     padding: 15px;
     text-align: center; }
+    .collection .collection-products .product-box .text .name {
+      margin-bottom: 10px; }
+      .collection .collection-products .product-box .text .name a {
+        color: #000;
+        text-transform: capitalize; }
+    .collection .collection-products .product-box .text .price {
+      margin-bottom: 10px; }
+      .collection .collection-products .product-box .text .price span {
+        font-size: 15px;
+        font-weight: 700; }
+    .collection .collection-products .product-box .text .link {
+      margin-bottom: 10px; }
+      .collection .collection-products .product-box .text .link a {
+        background: #fff;
+        border: 1px solid #ddd;
+        color: #000;
+        font-size: 12px;
+        padding: 5px 7px;
+        text-transform: uppercase; }
+
+.product-details .pd-slider .owl-nav .owl-prev {
+  position: absolute;
+  top: 45%;
+  left: 10px;
+  background: #fff;
+  color: #000;
+  font-size: 25px; }
+  .product-details .pd-slider .owl-nav .owl-prev:focus {
+    outline: 0; }
+.product-details .pd-slider .owl-nav .owl-next {
+  position: absolute;
+  top: 45%;
+  right: 10px;
+  background: #fff;
+  color: #000;
+  font-size: 25px; }
+  .product-details .pd-slider .owl-nav .owl-next:focus {
+    outline: 0; }
+.product-details .pd-slider .owl-nav i {
+  padding: 0 10px; }
+.product-details .name-price .name {
+  font-size: 25px;
+  font-weight: 500;
+  text-transform: capitalize; }
+.product-details .variants .cbg {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: #000;
+  border-radius: 50%;
+  position: relative;
+  top: 5px;
+  left: 5px; }
 
 /*# sourceMappingURL=theme.css.map */
