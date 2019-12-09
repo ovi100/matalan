@@ -440,12 +440,6 @@ CSS For Index Page
 .home-category-box .category-box .photo {
   margin-bottom: 15px; }
 
-.home-product-slider .product {
-  text-align: center; }
-  .home-product-slider .product .name {
-    padding: 5px 0; }
-  .home-product-slider .product .price {
-    padding: 5px 0; }
 .home-product-slider .hp-slider .owl-nav .owl-prev {
   position: absolute;
   top: 30%;
@@ -462,6 +456,15 @@ CSS For Index Page
   font-size: 25px; }
   .home-product-slider .hp-slider .owl-nav .owl-next:focus {
     outline: 0; }
+
+.product {
+  text-align: center; }
+  .product .name {
+    padding: 5px 0; }
+    .product .name a {
+      color: #000; }
+  .product .price {
+    padding: 5px 0; }
 
 .back-link .breadcrumb {
   background: #fff; }
@@ -549,46 +552,47 @@ CSS For Index Page
   padding: 10px 0; }
   .collection .collection-products .row {
     margin-bottom: 15px; }
-  .collection .collection-products .product-box .photo .featured-img:hover .back-img {
-    display: block !important; }
-  .collection .collection-products .product-box .photo .featured-img:hover .front-img {
-    display: none !important; }
-  .collection .collection-products .product-box .photo .front-img {
-    display: block !important;
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    transition: all 1s ease; }
-  .collection .collection-products .product-box .photo .back-img {
-    display: none !important;
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    transition: all 1s ease; }
-  .collection .collection-products .product-box .text {
-    padding: 15px;
-    text-align: center; }
-    .collection .collection-products .product-box .text .name {
-      margin-bottom: 10px; }
-      .collection .collection-products .product-box .text .name a {
-        color: #000;
-        text-transform: capitalize; }
-    .collection .collection-products .product-box .text .price {
-      margin-bottom: 10px; }
-      .collection .collection-products .product-box .text .price span {
-        font-size: 15px;
-        font-weight: 700; }
-    .collection .collection-products .product-box .text .link {
-      margin-bottom: 10px; }
-      .collection .collection-products .product-box .text .link a {
-        background: #fff;
-        border: 1px solid #ddd;
-        color: #000;
-        font-size: 12px;
-        padding: 5px 7px;
-        text-transform: uppercase; }
+
+.product-box .photo .featured-img:hover .back-img {
+  display: block !important; }
+.product-box .photo .featured-img:hover .front-img {
+  display: none !important; }
+.product-box .photo .front-img {
+  display: block !important;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+.product-box .photo .back-img {
+  display: none !important;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+.product-box .text {
+  padding: 15px;
+  text-align: center; }
+  .product-box .text .name {
+    margin-bottom: 10px; }
+    .product-box .text .name a {
+      color: #000;
+      text-transform: capitalize; }
+  .product-box .text .price {
+    margin-bottom: 10px; }
+    .product-box .text .price span {
+      font-size: 15px;
+      font-weight: 700; }
+  .product-box .text .link {
+    margin-bottom: 10px; }
+    .product-box .text .link a {
+      background: #fff;
+      border: 1px solid #ddd;
+      color: #000;
+      font-size: 12px;
+      padding: 5px 7px;
+      text-transform: uppercase; }
 
 .product-details .pd-slider .owl-nav .owl-prev {
   position: absolute;
@@ -623,5 +627,71 @@ CSS For Index Page
   position: relative;
   top: 5px;
   left: 5px; }
+.product-details .variants select {
+  height: 42px;
+  border-radius: 0;
+  box-shadow: none; }
+.product-details .variants .tbtn i {
+  font-size: 20px; }
+.product-details .related-product {
+  border: 1px solid #9a9a9a;
+  margin-top: 20px;
+  padding: 15px 30px; }
+  .product-details .related-product .rp-slider .owl-nav .owl-prev {
+    position: absolute;
+    top: 20%;
+    left: -30px;
+    color: #000;
+    font-size: 25px; }
+    .product-details .related-product .rp-slider .owl-nav .owl-prev:focus {
+      outline: 0; }
+  .product-details .related-product .rp-slider .owl-nav .owl-next {
+    position: absolute;
+    top: 20%;
+    right: -30px;
+    color: #000;
+    font-size: 25px; }
+    .product-details .related-product .rp-slider .owl-nav .owl-next:focus {
+      outline: 0; }
+  .product-details .related-product .rp-slider .owl-nav i {
+    font-weight: 600; }
+.product-details .product-description {
+  margin: 15px 0 30px; }
+  .product-details .product-description .for-desktop .nav-tabs {
+    border-bottom: 1px solid #9a9a9a; }
+    .product-details .product-description .for-desktop .nav-tabs li a {
+      height: 40px;
+      background: #ddd;
+      border-radius: 0;
+      color: #000; }
+    .product-details .product-description .for-desktop .nav-tabs .active a {
+      height: 42px;
+      background: #fff;
+      border: 1px solid #9a9a9a;
+      border-bottom: 0; }
+  .product-details .product-description .for-desktop .tab-content {
+    border: 1px solid #9a9a9a;
+    border-top: 0;
+    padding: 20px 15px; }
+  .product-details .product-description .for-mobile .panel-group .panel {
+    border-radius: 0; }
+
+.cart .row {
+  margin-bottom: 15px; }
+.cart .cart-header {
+  border-bottom: 1px solid #ccc; }
+.cart .cart-items {
+  border-bottom: 1px solid #ddd; }
+  .cart .cart-items a {
+    color: #000;
+    text-transform: capitalize; }
+  .cart .cart-items .form-control {
+    width: 55%;
+    height: 40px;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    text-align: center; }
 
 /*# sourceMappingURL=theme.css.map */

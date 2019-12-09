@@ -575,11 +575,7 @@ CSS For Index Page
 }
 
 .home-product-slider{
-	.product{
-		text-align: center;
-		.name{padding: 5px 0;}
-		.price{padding: 5px 0;}
-	}
+	
 	.hp-slider{
 		.owl-nav{
 			.owl-prev{
@@ -600,6 +596,15 @@ CSS For Index Page
 			}
 		}
 	}
+}
+
+.product{
+	text-align: center;
+	.name{
+		padding: 5px 0;
+		a{color: $bcolor;}
+	}
+	.price{padding: 5px 0;}
 }
 
 // *********************************
@@ -725,55 +730,57 @@ CSS For Index Page
 	.collection-products{
 		padding: 10px 0;
 		.row{margin-bottom: 15px;}
-		.product-box{
-			.photo{
-				.featured-img{
-					&:hover{
-						.back-img{
-	  						display: block !important; 
-	  					}
-	  					.front-img{
-	  						display: none !important; 
-	  					}
-					}
-				}
-				.front-img{
-				  	display: block !important;
-				  	@include transition(all,1s,ease);
-				}
+		
+	}
+}
+
+.product-box{
+	.photo{
+		.featured-img{
+			&:hover{
 				.back-img{
-				  	display: none !important;
-				  	@include transition(all,1s,ease);
-				}
+						display: block !important; 
+					}
+					.front-img{
+						display: none !important; 
+					}
 			}
-			.text{
-				padding: 15px;
-				text-align: center;
-				.name{
-					margin-bottom: 10px;
-					a{
-						color: #000;
-						text-transform: capitalize;
-					}
-				}
-				.price{
-					margin-bottom: 10px;
-					span{
-						font-size: 15px;
-					    font-weight: 700;
-					}
-				}
-				.link{
-					margin-bottom: 10px;
-					a{
-						background: $wcolor;
-					    border: 1px solid #ddd;
-					    color: $bcolor;
-					    font-size: 12px;
-					    padding: 5px 7px;
-					    text-transform: uppercase;
-					}
-				}
+		}
+		.front-img{
+		  	display: block !important;
+		  	@include transition(all,1s,ease);
+		}
+		.back-img{
+		  	display: none !important;
+		  	@include transition(all,1s,ease);
+		}
+	}
+	.text{
+		padding: 15px;
+		text-align: center;
+		.name{
+			margin-bottom: 10px;
+			a{
+				color: #000;
+				text-transform: capitalize;
+			}
+		}
+		.price{
+			margin-bottom: 10px;
+			span{
+				font-size: 15px;
+			    font-weight: 700;
+			}
+		}
+		.link{
+			margin-bottom: 10px;
+			a{
+				background: $wcolor;
+			    border: 1px solid #ddd;
+			    color: $bcolor;
+			    font-size: 12px;
+			    padding: 5px 7px;
+			    text-transform: uppercase;
 			}
 		}
 	}
@@ -822,6 +829,100 @@ CSS For Index Page
 		    position: relative;
 		    top: 5px;
 		    left: 5px;
+		}
+		select{
+			height: 42px;
+	    	border-radius: 0;
+		    box-shadow: none;
+	    }
+
+		.tbtn{
+			i{font-size: 20px;}
+		}
+	}
+	.related-product {
+	    border: 1px solid #9a9a9a;
+	    margin-top: 20px;
+	    padding: 15px 30px;
+	    .rp-slider{
+			.owl-nav{
+				.owl-prev{
+					position: absolute;
+				    top: 20%;
+				    left: -30px;
+				    color: $bcolor;
+				    font-size: 25px;
+				    &:focus{outline: 0;}
+				}
+				.owl-next{
+					position: absolute;
+				    top: 20%;
+				    right: -30px;
+				    color: $bcolor;
+				    font-size: 25px;
+				    &:focus{outline: 0;}
+				}
+				i{font-weight: 600;}
+			}
+		}
+	}
+	.product-description{
+		margin: 15px 0 30px;
+		.for-desktop{
+			.nav-tabs{
+				border-bottom: 1px solid #9a9a9a;
+				li{
+					a{
+						height: 40px;
+					    background: #ddd;
+						border-radius: 0;
+						color: $bcolor;
+					}
+				}
+				.active{
+					a{
+						height: 42px;
+						background: $wcolor;
+						border: 1px solid #9a9a9a;
+						border-bottom: 0;
+					}
+				}
+			}
+			.tab-content{
+				border: 1px solid #9a9a9a;
+			    border-top: 0;
+			    padding: 20px 15px;
+			}
+		}
+		.for-mobile{
+			.panel-group{
+				.panel{border-radius: 0;}
+			}
+		}
+	}
+}
+// *********************************
+
+// CSS For Cart Page
+.cart{
+	.row{margin-bottom: 15px;}
+	.cart-header{
+		border-bottom: 1px solid #ccc;
+	}
+	.cart-items{
+		border-bottom: 1px solid #ddd;
+		a{
+			color: $bcolor;
+			text-transform: capitalize;
+		}
+		.form-control{
+			width: 55%;
+			height: 40px;
+		    border-radius: 0;
+		    box-shadow: none;
+		    margin: 0 auto;
+		    margin-bottom: 10px;
+		    text-align: center;
 		}
 	}
 }
