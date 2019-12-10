@@ -96,6 +96,22 @@ a:hover, a:visited, a:focus {
     color: #000;
     margin-top: 10px; }
 
+/* width */
+::-webkit-scrollbar {
+  width: 5px; }
+
+/* Track */
+.cart-item::-webkit-scrollbar-track {
+  background: #f1f1f1; }
+
+/* Handle */
+.cart-item::-webkit-scrollbar-thumb {
+  background: #888; }
+
+/* Handle on hover */
+.cart-item::-webkit-scrollbar-thumb:hover {
+  background: #555; }
+
 .menu-sidenav {
   position: fixed;
   top: 72px;
@@ -288,6 +304,55 @@ a:hover, a:visited, a:focus {
       min-width: 90px; }
       .header .action-bar .action-icon .dropdown-menu li a {
         font-size: 15px; }
+    .header .action-bar .action-icon .cart-items-holder {
+      position: absolute;
+      top: 43px;
+      left: 5px;
+      width: 95%;
+      background: #fff;
+      border: 1px solid #ccc;
+      display: none;
+      padding: 10px;
+      z-index: 10; }
+      .header .action-bar .action-icon .cart-items-holder .visible-xs span {
+        background: #fff;
+        display: inline-block;
+        font-size: 13px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 5px; }
+        .header .action-bar .action-icon .cart-items-holder .visible-xs span:before {
+          content: '';
+          width: 90%;
+          height: 1px;
+          background: #ccc;
+          position: absolute;
+          top: 115px;
+          left: 12px;
+          z-index: -1; }
+      .header .action-bar .action-icon .cart-items-holder .cart-item {
+        max-height: 205px;
+        overflow-y: auto;
+        overflow-x: hidden; }
+        .header .action-bar .action-icon .cart-items-holder .cart-item .item {
+          border-bottom: 1px solid #ddd;
+          margin-bottom: 10px;
+          padding-bottom: 8px; }
+          .header .action-bar .action-icon .cart-items-holder .cart-item .item a {
+            color: #000; }
+          .header .action-bar .action-icon .cart-items-holder .cart-item .item .cart-action a {
+            background: #fff;
+            border: 1px solid #ccc;
+            padding: 5px;
+            text-transform: capitalize; }
+      .header .action-bar .action-icon .cart-items-holder .subtotal {
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 10px;
+        margin: 0 0 10px; }
+      .header .action-bar .action-icon .cart-items-holder:hover {
+        display: block; }
+    .header .action-bar .action-icon:hover .cart-items-holder {
+      display: block; }
   .header .action-bar #msearchbox {
     margin-top: 25px; }
     .header .action-bar #msearchbox .input-group .form-control {
@@ -366,7 +431,8 @@ a:hover, a:visited, a:focus {
       .header .main-nav .mainnav-wrapper .mega-dropdown:hover {
         background: #f7f7f7;
         border-top: 2px solid #eb0000;
-        box-shadow: 0 0 2px #ddd; }
+        box-shadow: 0 0 2px #ddd;
+        padding: 13px 15px; }
         .header .main-nav .mainnav-wrapper .mega-dropdown:hover .mega-dropdown-content {
           visibility: visible; }
 .header .fixed-nav {
@@ -428,10 +494,8 @@ footer {
           footer .social-media-icon ul li a:hover {
             color: #eb0000; }
 
-CSS For Index Page
 .home-category-list .row {
   margin-bottom: 15px; }
-  CSS For Index Page
   .home-category-list .row .tbtn {
     padding: 15px 20px; }
 
