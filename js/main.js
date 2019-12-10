@@ -67,7 +67,7 @@ $(document).ready(function() {
         navText: ['<i class="icofont-thin-left"></i>','<i class="icofont-thin-right"></i>'],
         responsive:{
             0:{
-              items:1
+              items:2
             },
             600:{
               items:2
