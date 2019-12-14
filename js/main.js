@@ -44,15 +44,15 @@ $(document).ready(function() {
         * ----------------------------------------------
     */
 
-    function filtertoggleIcon(e){
-        $(e.target)
-            .prev('h5 a')
-            .find(".fo-icon-change")
-            .toggleClass('icofont-minus icofont-plus');
-    }
+    $('.mobile-filter').click(function() {
+        /* Act on the event */
+        $('.filters').fadeIn('slow');
+    });
 
-    $('.filter-option').on('hidden.bs.collapse', filtertoggleIcon);
-    $('.filter-option').on('shown.bs.collapse', filtertoggleIcon);
+    $('.filter-close-icon').click(function() {
+        /* Act on the event */
+        $('.filters').fadeOut('slow');
+    });
 
     /*
         * ----------------------------------------------

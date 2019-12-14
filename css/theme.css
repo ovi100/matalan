@@ -97,7 +97,7 @@ a:hover, a:visited, a:focus {
     margin-top: 10px; }
 
 /* width */
-::-webkit-scrollbar {
+.cart-item::-webkit-scrollbar {
   width: 5px; }
 
 /* Track */
@@ -358,14 +358,22 @@ a:hover, a:visited, a:focus {
     .header .action-bar #msearchbox .input-group .form-control {
       height: 45px;
       border-right: 0;
+      border-radius: 0;
       box-shadow: none; }
+      .header .action-bar #msearchbox .input-group .form-control.placeholder {
+        font-size: 13px; }
+      .header .action-bar #msearchbox .input-group .form-control:-moz-placeholder {
+        font-size: 13px; }
+      .header .action-bar #msearchbox .input-group .form-control::-webkit-input-placeholder {
+        font-size: 13px; }
     .header .action-bar #msearchbox .input-group .input-group-addon {
-      background: transparent; }
+      background: #d2d2d2;
+      border-radius: 0; }
       .header .action-bar #msearchbox .input-group .input-group-addon button {
         background: transparent;
         border: 0;
         color: #000;
-        font-size: 20px;
+        font-size: 13px;
         padding: 0 10px; }
 .header .main-nav {
   height: 50px;
@@ -544,46 +552,53 @@ footer {
   text-align: center; }
   .collection .collection-count p {
     text-transform: uppercase; }
-.collection .filters .filter-option .panel-group .panel {
-  border-radius: 0; }
-  .collection .filters .filter-option .panel-group .panel .panel-heading {
-    background: #fff; }
-    .collection .filters .filter-option .panel-group .panel .panel-heading .panel-title {
-      font-weight: 600;
-      text-transform: capitalize; }
-  .collection .filters .filter-option .panel-group .panel .panel-body {
-    border-top: 0; }
-    .collection .filters .filter-option .panel-group .panel .panel-body .option {
-      position: relative;
-      cursor: pointer;
-      display: block;
-      font-size: 16px;
-      margin-bottom: 10px;
-      padding-left: 25px;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none; }
-      .collection .filters .filter-option .panel-group .panel .panel-body .option span:nth-child(1) {
-        position: relative;
-        top: -3px;
-        font-size: 12px;
+.collection .filters .filter-header {
+  padding: 10px;
+  margin-bottom: 25px; }
+  .collection .filters .filter-header .filter-close-icon {
+    font-size: 20px; }
+.collection .filters .filter-option .panel-group {
+  margin-bottom: 10px; }
+  .collection .filters .filter-option .panel-group .panel {
+    border-radius: 0; }
+    .collection .filters .filter-option .panel-group .panel .panel-heading {
+      background: #fff; }
+      .collection .filters .filter-option .panel-group .panel .panel-heading .panel-title {
         font-weight: 600;
         text-transform: capitalize; }
-      .collection .filters .filter-option .panel-group .panel .panel-body .option input {
-        position: absolute;
-        opacity: 0;
+    .collection .filters .filter-option .panel-group .panel .panel-body {
+      border-top: 0; }
+      .collection .filters .filter-option .panel-group .panel .panel-body .option {
+        position: relative;
         cursor: pointer;
-        height: 0;
-        width: 0; }
-      .collection .filters .filter-option .panel-group .panel .panel-body .option .checkmark {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 16px;
-        width: 16px;
-        background-color: #fff;
-        border: 1px solid #ddd; }
+        display: block;
+        font-size: 16px;
+        margin-bottom: 10px;
+        padding-left: 25px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none; }
+        .collection .filters .filter-option .panel-group .panel .panel-body .option span:nth-child(1) {
+          position: relative;
+          top: -3px;
+          font-size: 12px;
+          font-weight: 600;
+          text-transform: capitalize; }
+        .collection .filters .filter-option .panel-group .panel .panel-body .option input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+          height: 0;
+          width: 0; }
+        .collection .filters .filter-option .panel-group .panel .panel-body .option .checkmark {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 16px;
+          width: 16px;
+          background-color: #fff;
+          border: 1px solid #ddd; }
 .collection .collection-name {
   text-transform: uppercase; }
 .collection .sort-option {
@@ -609,7 +624,7 @@ footer {
     width: auto;
     float: right; }
   .collection .sort-option .mobile-filter {
-    width: 30%;
+    width: 70%;
     border: 1px solid #ccc;
     padding: 5px 10px; }
 .collection .collection-products {
